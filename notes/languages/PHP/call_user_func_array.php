@@ -1,4 +1,5 @@
 <?php
+
 class X
 {
     public function sum($a, $b, $c)
