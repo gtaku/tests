@@ -14,7 +14,7 @@ git checkout name
 
 # ブランチのマージ
 git checkout master
-git mage name
+git merge name
 
 # push/pullのデフォルト(upstream)の設定と確認
 git config --global push.default simple # 安全な設定にしておく
