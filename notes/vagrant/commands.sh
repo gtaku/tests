@@ -1,3 +1,7 @@
+# Vagrantコマンドメモ
+
+# http://lab.raqda.com/vagrant/index.html
+
 # バージョン確認
 vagrant -v
 
