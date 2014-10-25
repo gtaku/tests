@@ -25,3 +25,9 @@ vi /etc/httpd/conf.d/phpMyAdmin.conf
 # </Directory>
 
 service httpd start
+
+service mysqld start
+mysql
+mysql> CREATE USER vagrant@localhost IDENTIFIED BY 'vagrant';
+mysql> exit
+

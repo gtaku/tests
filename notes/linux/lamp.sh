@@ -27,7 +27,7 @@ yum -y install yum-priorities
 # MySQL 5.6
 yum -y remove mysql*
 yum -y install http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm
-yum -y install mysql
+yum -y install mysql-community-server
 
 # Apache 2.2
 yum -y install httpd --enablerepo=wing
