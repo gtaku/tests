@@ -28,6 +28,9 @@ service httpd start
 
 service mysqld start
 mysql
+mysql> CREATE DATABASE smartycake_development;
 mysql> CREATE USER vagrant@localhost IDENTIFIED BY 'vagrant';
+mysql> GRANT ALL PRIVILEGES ON smartycake_development.* TO vagrant;
+mysql> FLUSH PRIVILEGES;
 mysql> exit
 
