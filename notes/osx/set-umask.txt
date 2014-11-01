@@ -1,0 +1,8 @@
+
+# /etc/launchd-user.confを開く
+sudo vi /etc/launchd-user.conf
+
+# umaskを設定する
+umask 000
+
+# 再起動する

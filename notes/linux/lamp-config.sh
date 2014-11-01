@@ -24,6 +24,13 @@ vi /etc/httpd/conf.d/phpMyAdmin.conf
 #    </IfModule>
 # </Directory>
 
+# <Directory />
+#     Options FollowSymLinks
+#     - AllowOverride None
+#     + AllowOverride All
+# </Directory>
+
+
 service httpd start
 
 service mysqld start

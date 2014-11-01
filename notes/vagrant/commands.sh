@@ -20,6 +20,9 @@ vagrant init BOX_NAME
 # 起動
 vagrant up
 
+# provision付き起動
+vagrant up --provision
+
 # SSH
 vagrant ssh
 
