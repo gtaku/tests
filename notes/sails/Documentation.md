@@ -37,7 +37,25 @@ in a new Sails project, it will be accessible at http://localhost:1337/foo.html.
 assets/foo/index.html, it will be available at both http://localhost:1337/foo/index.html and
 http://localhost:1337/foo.
 
+一般的な他のWebサーバーと同様に、Sailsはindex.htmlを使うことができます。 例えば、 assets/foo.html は
+http://localhost:1337/foo.html からアクセスできますが assets/foo/index.html は
+http://localhost:1337/foo/index.html に加えて http://localhost:1337/foo からもアクセスできます。
+
 ---
+
+#### Precedence
+
+It is important to note that the static middleware is installed after the Sails router. So if you define a
+custom route, but also have a file in your assets directory with a conflicting path, the custom route will
+intercept the request before it reaches the static middleware. For example, if you create assets/index.html,
+with no routes defined in your config/routes.js file, it will be served as your home page. But if you define
+an custom route, '/': 'FooController.bar', that route will take precedence.
+
+---
+
+
+
+
 
 
 
