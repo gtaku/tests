@@ -14,21 +14,21 @@ express, or the "www" folder you might be familiar with from other web servers l
 middle step allows Sails to prepare/pre-compile assets for use on the client - things like LESS,
 CoffeeScript, SASS, spritesheets, Jade templates, etc.
 
-#### 対訳/概要
-
 Assetsは外部に公開するサーバー上の静的ファイル（JS、CSS、画像など）です。Sailsでは、これらのファイルはアプリを起動するとき
 一時ディレクトリ（.tmp/public/）に加工し、同期されている assets/ ディレクトリに配置されます。
 .tmpの/public フォルダは Express.js の "public" フォルダ、Apache の "www" フォルダのようなものである。
 このステップでLESS、CoffeeScript、SASS、spritesheets、Jade templatesなどをコンパイルすることができます。
+
+---
 
 #### Static middleware
 
 Behind the scenes, Sails uses the static middleware from Express to serve your assets. You can configure
 this middleware (e.g. cache settings) in /config/http.js.
 
-#### 対訳/Static middleware
-
 Sailsは express.static を使用しています。/config/http.js で(キャッシュなどの)設定をすることができます。
+
+---
 
 #### index.html
 
@@ -37,7 +37,7 @@ in a new Sails project, it will be accessible at http://localhost:1337/foo.html.
 assets/foo/index.html, it will be available at both http://localhost:1337/foo/index.html and
 http://localhost:1337/foo.
 
-
+---
 
 
 
